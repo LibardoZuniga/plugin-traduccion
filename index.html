@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            df
+        </title>
+        <script src="translator.js" type="text/javascript">
+        </script>
+        <style type="text/css">
+            .lds-hourglass {
+                    left: calc(50% - 32px);
+    top: calc(50% - 32px);
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+.background{
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    background: rgba(0,0,0,0.8);
+    top: 1%;
+    left: 1%;
+    color: white;
+}
+        </style>
+    </head>
+    <body>
+        <div>
+            Hola
+            <br>
+                <div>
+                    Somos elementos del dom
+                </div>
+                <br>
+                </br>
+            </br>
+        </div>
+        <div class="background">
+            <div class="lds-hourglass">
+            </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+    var Traslators = new Traslator({
+                "url":"language.json",
+                "language":"english"
+            })
+</script>
