@@ -1,2 +1,2 @@
-# Plugin-Traduccion
+# puglin-traduccion
 Plugin de traducción javascript Poo
